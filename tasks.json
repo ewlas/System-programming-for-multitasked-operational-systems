@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sis.cfg",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "sis.cpp",
+                "-o",
+                "sis.exe",
+                "-luser32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
